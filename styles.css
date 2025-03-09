@@ -1,0 +1,288 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* Header Styles */
+header {
+  background: #004d99;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://st3.depositphotos.com/1077687/14506/v/450/depositphotos_145061735-stock-illustration-figure-electrical-circuits-icon.jpg') no-repeat center center/cover;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.603);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h2 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.btn {
+  background: #ffcc00;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e6b800;
+}
+
+/* Footer Styles */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  .tutorial-hero h2 {
+    font-size: 2rem;
+  }
+  
+  .tutorial-hero p {
+    font-size: 1rem;
+  }
+  
+  .tutorial-article h3 {
+    font-size: 1.5rem;
+  }
+  
+  .tutorial-article p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Tutorials Section Specific Styles */
+.tutorials {
+  background: #fff;
+  padding: 2rem 0;
+}
+
+.tutorial {
+  background: #f9f9f9;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.tutorial h3 {
+  margin-bottom: 0.5rem;
+}
+
+.tutorial p {
+  margin-bottom: 1rem;
+}
+
+.tutorial a.btn {
+  background: #004d99;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.tutorial a.btn:hover {
+  background: #003366;
+}
+
+/* Coming Soon Banner Styles */
+.coming-soon {
+  background: #e2e2e2;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.coming-soon h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.coming-soon p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0.5rem auto;
+}
+
+
+/* Tutorial Content Section */
+.tutorial-content {
+  margin-bottom: 2rem;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-content h3 {
+  font-size: 1.2rem;
+  margin-top:1rem ;
+
+  color: #000000;
+}
+
+.tutorial-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.tutorial-content a.btn {
+  background: #ffcc00;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+/* Flex container for image and text */
+.component-layout {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between image and text */
+}
+
+/* Component Image Styling */
+.component-image {
+  display: block;
+  width: 100%;
+  max-width: 200px;  /* Adjust the maximum width as needed */
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Style for the paragraph */
+.component-layout p {
+  font-size: 1.1rem;
+}
+
+.tutorial-article {
+  margin-bottom: 2rem;
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .tutorial-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+} */
+
+.tutorial-article h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #004d99;
+}
+
+.tutorial-article p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Back Link Button */
+.back-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-link a.btn {
+  background: #004d99;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.back-link a.btn:hover {
+  background: #003366;
+}
