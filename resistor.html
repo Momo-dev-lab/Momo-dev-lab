@@ -8,6 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-67HBTDG0QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-67HBTDG0QN');
+</script>
 <body>
   <!-- Header Section -->
   <header>
@@ -39,7 +48,7 @@
         <p>
           Resistors operate based on Ohm’s Law, which states that Voltage = Current × Resistance (V = I×R). This means the higher the resistance (measured in Ohms), the less current can flow through the circuit. For example, a resistor with high resistance might slow down current to protect a fragile LED, while a low-resistance resistor could allow more power to reach a motor.
         </p>
-        <h3>There are 2 main types of resistors: Linear and Nonlinear resistors</h3>
+        <p>There are 2 main types of resistors: Linear and Nonlinear resistors</p>
         <h1>Linear Resistors</h1>
         <p>Linear resistors are the most common type of resistors. They follow Ohm’s Law perfectly, meaning their resistance stays constant regardless of changes in voltage or current flowing through them. Think of them like a steady, reliable friend they behave predictably in almost any situation.</p>
         <h3>Examples of Linear Resistor :</h3>
@@ -55,10 +64,23 @@
         <h1>Non-Linear Resistors</h1>
         <p>Nonlinear resistors do not obey Ohm’s Law. Instead, their resistance changes based on external factors like temperature, light, or voltage. They’re like chameleons adapting their behavior to suit specific needs.</p>
         <h3>Examples of Non-Linear Resistor :</h3>
+        <img src="images/Types-of-Non-Linear-Resistors.jpg">
         <p>Thermistors are temperature-sensitive resistors that change their resistance based on heat. For instance, they’re used in home thermostats to regulate heating or cooling systems by detecting room temperature shifts. In cars, they monitor engine coolant levels to prevent overheating, ensuring your vehicle runs smoothly. They’re also critical in medical devices like digital thermometers, where precise temperature readings are essential.</p>
         <p>Light-Dependent Resistors (LDRs), on the other hand, adjust their resistance when exposed to light. Imagine automatic streetlights that flicker on at dusk—these rely on LDRs to sense fading daylight and activate the bulbs. Similarly, night lights in homes use LDRs to brighten automatically in darkness, much like how our pupils dilate to adapt to low light.</p>
         <p>Photoresistors, similar to LDRs, fine-tune their resistance based on light intensity. They’re often found in camera light meters, helping photographers adjust exposure settings by measuring ambient light. Solar-powered garden lights also use photoresistors to switch off during the day and illuminate at night, conserving energy efficiently.</p>
         <p>Varistors act as voltage-sensitive guardians in electronics. They protect devices like TVs and computers from sudden power surges, such as those caused by lightning strikes. When a voltage spike occurs, a varistor’s resistance drops dramatically, diverting excess electricity away from sensitive components—like a safety valve in a plumbing system.</p>
+        <h3>Calculating Resistor's Value</h3>
+        <p>To identify a resistor’s value, engineers use color-coded bands printed on them.Resistor color codes are a universal "secret language" printed as colored bands on resistors to indicate their resistance value, tolerance, and sometimes reliability. This system was developed to allow engineers and hobbyists to quickly identify a resistor’s specifications without needing printed text, which would be impractical on small components.</p>
+        <p>Most resistors use 4 bands, though precision resistors may have 5 or 6 bands for additional details like temperature coefficients. Here’s how a standard 4-band resistor works:</p>
+        <p><h3>First Two Bands (Digits):</h3>These represent the first two digits of the resistance value. For example, red (2) and red (2) in the "red-red-brown-gold" resistor combine to form "22."</p>
+        <p><h3>Third Band (Multiplier):</h3> This determines the order of magnitude. Brown represents ×10, so "22" becomes 22 × 10 = 220 Ohms.</p>
+        <p><h3>Fourth Band (Tolerance):</h3> Indicates how much the actual resistance can deviate from the stated value. Gold (±5%) means the 220Ω resistor could range between 209Ω and 231Ω.</p>
+        <h3>Color Code Table:</h3>
+        <img src="images/Resistor color code.png">
+        <h3>Tolerance</h3>
+        <p>Tolerance is critical in circuits where precision is key. A ±1% resistor (brown band) is essential in medical devices or audio equipment, while a ±10% resistor (silver band) might suffice for basic tasks like powering an LED strip. High-precision resistors (e.g., gray or blue tolerance bands) are used in aerospace or laboratory instrument</p>
+        <h3>Fun Fact!</h3>
+        <p>The earliest resistors were simple blocks of carbon! Today, they’ve evolved into precision components so small that thousands can fit on a single microchip, powering everything from smartwatches to spacecraft.</p>
       </div>
       <div class="calculator-section">
         <h2>Resistance Calculator</h2>

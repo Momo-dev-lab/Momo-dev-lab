@@ -212,6 +212,15 @@ footer {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+img {
+  width: 100%;
+  max-width: 800px;  /* Limits how big it can get */
+  height: auto; /* Keeps aspect ratio */
+  position: relative;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .tutorial-content a.btn {
   background: #ffcc00;
